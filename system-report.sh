@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 sudorook
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 # system-report.sh — portable hardware/firmware inventory for documenting or
 # listing a computer for sale.
 #

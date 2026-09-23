@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 sudorook
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 {pkgs ? import <nixpkgs> {}}:
 pkgs.mkShell {
   name = "system-report";
