@@ -1,7 +1,6 @@
 # SPDX-FileCopyrightText: 2026 sudorook
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
-
 {pkgs ? import <nixpkgs> {}}:
 pkgs.mkShell {
   name = "system-report";
@@ -12,21 +11,21 @@ pkgs.mkShell {
     coreutils
     dmidecode
     fwupd
-    gnome-randr # GNOME/Mutter Wayland  [^f7594a]
+    gnome-randr
     gnugrep
-    gnused # scrub() and the strip_ansi() fallback
-    nvme-cli # nvme list / id-ctrl / smart-log
+    gnused
+    nvme-cli
     pciutils
-    perl # preferred strip_ansi() path
+    perl
     power-profiles-daemon
-    smartmontools # smartctl
-    systemd # hostnamectl, systemctl, powerprofilesctl
-    tlp # only reported if installed; NOT advised on FW13 AMD 7040
+    smartmontools
+    systemd
+    tlp
     upower
-    util-linux # lsblk
-    wayland-utils # wayland-info          — any Wayland compositor [^528300]
-    wlr-randr # wlroots compositors   [^cfeafa]
-    xorg.xrandr # X11 (xrandr)          — needs DISPLAY
+    util-linux
+    wayland-utils
+    wlr-randr
+    xorg.xrandr
   ];
 
   shellHook = ''
